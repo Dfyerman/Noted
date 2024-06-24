@@ -12,7 +12,9 @@
 
 ## Task
 
-The task of this assignment was to take previously given code and finish it so that it works correctly with the idea of the assignment.
+The task of this assignment was to take previously given code and finish it so that it works correctly with the idea of the assignment.\
+
+![screenshot](image.jpeg)
 
 ## Installation 
 
