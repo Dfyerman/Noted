@@ -1,22 +1,12 @@
 [
     {
         "title": "New Note",
-        "text": "This is my new note",
-        "id": "6905"
+        "text": "This is one example",
+        "id": "e508"
     },
     {
-        "title": "Another New Note",
-        "text": "Another note that I added",
-        "id": "a04c"
-    },
-    {
-        "title": "aaaaaa",
-        "text": "aaaaaaaaaaa",
-        "id": "e468"
-    },
-    {
-        "title": "sssss",
-        "text": "ssssssss",
-        "id": "e1ef"
+        "title": "New Note Again",
+        "text": "This is another new note.",
+        "id": "a74e"
     }
 ]

@@ -1,9 +1,12 @@
+
+
 let noteForm;
 let noteTitle;
 let noteText;
 let saveNoteBtn;
 let newNoteBtn;
 let noteList;
+
 
 if (window.location.pathname === '/notes') {
   noteForm = document.querySelector('.note-form');
@@ -83,9 +86,10 @@ const handleNoteSave = () => {
   });
 };
 
+
+
 // Delete the clicked note
 const handleNoteDelete = (e) => {
-  // Prevents the click listener for the list from being called when the button inside of it is clicked
   e.stopPropagation();
 
   const note = e.target;
@@ -95,10 +99,14 @@ const handleNoteDelete = (e) => {
     activeNote = {};
   }
 
-  deleteNote(noteId).then(() => {
-    getAndRenderNotes();
-    renderActiveNote();
-  });
+  deleteNote(noteId)
+    .then(() => {
+      getAndRenderNotes();
+      renderActiveNote();
+    })
+    .catch((error) => {
+      console.error(error);
+    });
 };
 
 // Sets the activeNote and displays it
@@ -158,7 +166,7 @@ const renderNoteList = async (notes) => {
         'delete-note'
       );
       delBtnEl.addEventListener('click', handleNoteDelete);
-
+      console.log('delete button clicked')
       liEl.append(delBtnEl);
     }
 

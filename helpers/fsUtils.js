@@ -31,4 +31,21 @@ const readAndAppend = (content, file) => {
   });
 };
 
-module.exports = { readFromFile, writeToFile, readAndAppend };
+const deleteFromFile = (data, filePath) => {
+  return new Promise((resolve, reject) => {
+    fs.writeFile(filePath, JSON.stringify(data, null, 4), (err) => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve();
+      }
+    });
+  });
+};
+
+
+
+
+
+module.exports = { readFromFile, writeToFile, readAndAppend, deleteFromFile };
+ 
