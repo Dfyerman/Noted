@@ -16,16 +16,16 @@ app.use(express.static('public'));
 
 // GET Route for homepage
 app.get('/', (req, res) =>
-  res.sendFile(path.join(__dirname, 'public/assets/index.html'))
+  res.sendFile(path.join(__dirname, 'public/index.html'))
 );
 
 // GET Route for notes page
 app.get('/notes', (req, res) =>
-  res.sendFile(path.join(__dirname, 'public/assets/notes.html'))
+  res.sendFile(path.join(__dirname, 'public/pages/notes.html'))
 );
 
 app.delete('/notes', (req, res) =>
-  res.sendFile(path.join(__dirname, 'public/assets/notes.html'))
+  res.sendFile(path.join(__dirname, 'public/pages/notes.html'))
 );
 
 
