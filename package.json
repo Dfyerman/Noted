@@ -4,9 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "install": "npm install",
-    "start": "npm start"
+    "test": "echo \"Error: no test specified\" && exit 1"
+    
 
   },
   "author": "",
